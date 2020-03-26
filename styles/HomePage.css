@@ -1,0 +1,195 @@
+/* @import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700); */
+
+html {
+	background-color: rgb(0, 51, 153);
+}
+
+h1{
+	text-align: center;
+	font-family: 'Tahoma', sans-serif;
+	color: rgb(0, 51, 153);
+}
+
+h4 {
+	text-align: center;
+  }
+.accordion{
+	width: 100%;
+	max-width: 1080px;
+        height: 250px;
+	overflow: hidden;
+        margin: 100px auto;
+}
+.accordion ul{
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+	margin: 0;
+	padding: 0;
+}
+.accordion ul li{
+	display: table-cell;
+	vertical-align: bottom;
+	position: relative;
+    width: 16.666%;
+        height: 250px;
+    	background-repeat: no-repeat;
+	background-position: center center;
+	transition: all 500ms ease;
+}
+.accordion ul li div{
+	display: block;
+	overflow: hidden;
+	width: 100%;
+}
+.accordion ul li div a{
+	display: block;
+	height: 250px;
+	width: 100%;
+	position: relative;
+	z-index: 3;
+	/* vertical-align: bottom; */
+	padding: 15px 20px;
+	box-sizing: border-box;
+	color: rgb(0, 51, 153);
+	
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+	transition: all 200ms ease;
+
+}
+.accordion ul li div a *{
+	opacity: 0;
+	margin: 0;
+	width: 100%;
+	text-overflow: ellipsis;
+	position: relative;
+	z-index: 5;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-transform: translateX(-20px);
+	transform: translateX(-20px);
+	-webkit-transition: all 400ms ease;
+	transition: all 400ms ease;
+}
+.accordion ul li div a h2{
+	font-family: 'tahoma', sans-serif;
+	text-overflow: clip;
+	font-size: 24px;
+	text-transform: uppercase;
+	margin-bottom: 2px;
+	top: 160px;
+}
+.accordion ul li div a p{
+	top: 160px;
+	font-size: 13.5px;
+}
+.accordion ul li:nth-child(1){
+	background-image: url(images);
+}
+.accordion ul li:nth-child(2){
+	background-image:  url('../images/pre.png');
+}
+.accordion ul li:nth-child(3){
+	background-image: url('../images/initiation.png');
+}
+.accordion ul li:nth-child(4){
+	background-image: url('../images/planning.jpg');
+}
+.accordion ul li:nth-child(5){
+	background-image: url('../images/project-execution.jpg');
+}
+.accordion ul li:nth-child(6){
+	background-image: url('../images/Project-Closing-Phase.jpg');
+}
+.accordion ul:hover li{
+	width: 8%;
+}
+.accordion ul:hover li:hover{
+	width: 60%;
+}
+/* .accordion ul:hover li:hover a{
+	background: rgba(0, 0, 0, 0.4);
+} */
+.accordion ul:hover li:hover a *{
+	opacity: 1;
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}
+
+
+@media screen and (max-width: 600px){
+	body{
+		margin: 0;
+	}
+	.accordion{
+		height: auto;
+	}
+	.accordion ul li, .accordion ul li:hover, .accordion ul:hover li, .accordion ul:hover li:hover{
+		position: relative;
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+		-webkit-transition: none;
+		transition: none;
+	}
+}
+/*footer*/
+footer {
+	line-height: 60px;
+	font-weight: 400;
+	/* box-shadow: 0 1px 3px 0 rgb(192, 198, 208); */
+	height: 60px;
+	background-color: transparent;
+	top: 25%;
+	left: 10% ;
+	position: fixed;
+	right: 0;
+	z-index: 10000;
+	padding-bottom: 15px;
+  }
+  
+  #header {
+	position: relative;
+	width: 970px;
+	margin: 0 auto;
+	background: rgb(255, 51, 0);
+  }
+  
+  #header .menu {
+	float: left;
+	line-height: 60px;
+	margin-bottom: 0;
+	font-size: 13px;
+	list-style: none;
+  }
+  
+  #header .menu li {
+	display: inline-block;
+  }
+  
+  #header .menu li a {
+	font-size: large;
+	display: block;
+	letter-spacing: 3px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: rgb(23, 37, 90);
+	padding: 0 20px;
+  }
+  
+  #header .menu li a:hover {
+	background: rgb(255, 51, 0)
+  }
+  
+  #header .name {
+	color: rgb(23, 37, 90);
+	height: 60px;
+	float: left;
+	margin-right: 30px;
+	margin-top: 0;
+	font-size: 24px;
+	font-family: 'Coiny', sans-serif;
+	font-variant: small-caps;
+  }

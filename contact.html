@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="styles/contact.css" rel="stylesheet" type="text/css">
+    <title>contact</title>
+   
+</head>
+<body>
+  <div class="container">
+  <header class="contactheader">
+    <h2>Contact Us</h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+    <button class="button"onclick="window.location.href='./HomePage.html'">Home Page</button>
+      <button class="button"onclick="window.location.href='./login.html'">Login Page</button>
+  </header>
+  <div class="row">
+    <div class="column">
+      
+    
+      <img src="./images/img1.jpg" alt="contact">
+      
+          </div>
+    <div class="column">
+       <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="Canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="lebanon">Lebanon</option>
+          <option value="Austria">Pakistan</option>
+          <option value="other">Other...</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+        <input type="submit" value="submit">
+      </div>
+  </div>
+</div>
+
+</body>
+</html>
